@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background: linear-gradient(to bottom,#252424,#ba3c4d); ;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px 5px rgba(141, 130, 130, 0.215);
+    
+}
+.progress {
+    background: #78268c !important;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+#current-time{
+    color: rgb(164, 92, 169);
+}
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px;
+    height: 4px;
+    width: 90%;
+}
+.progress{
+    background: #242323;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+.duration-wrapper {
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.music{
+    position: relative;
+    transform: translateZ(95px);
+    z-index: 0;
+    left: 5px;
+    top: -50px;
+    display: flex;
+    width: 100%;
+    height: 48%;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 0%;
+    height: 0px;
+    max-width: 80%;
+    opacity: 0;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+    transition: all .1s ease-in;
+    
+}
+.img.active{
+    opacity: 1;
+    width: 100%;
+    height: 336px;
+    
+}
+.musicName{
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: Nunito, sans-serif;
+}
+.artist{
+    opacity: .8;
+    margin-top: 3px;
+    font-size: 20px;
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+}
+
+.backBtn{
+    font-size: 35px;
+    color: rgb(129, 129, 129);
+    cursor: pointer;
+    user-select: none;
+    margin-right: 20px;
+
+}
+.play{
+    font-size: 45px;
+    color: rgb(129, 129, 129);
+    cursor: pointer;
+    user-select: none;
+}
+.forwardBtn{
+    font-size: 35px;
+    color: rgb(129, 129, 129);
+    cursor: pointer;
+    user-select: none;
+    margin-left: 20px;
+}
+.speed{
+    position: relative;
+    top: -231px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #7aa0a1;
+}
+.itemspeed{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
